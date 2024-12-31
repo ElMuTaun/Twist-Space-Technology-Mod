@@ -679,7 +679,7 @@ public class GTCMMachineRecipePool implements IRecipePool {
                 MaterialsUEVplus.TranscendentMetal.getNanite(48),
 
                 eM_Coil.get(64),
-                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UMV, 32),
+                new Object[]{OrePrefixes.circuit.get(Materials.UMV), 32},
                 new Object[]{OrePrefixes.circuit.get(Materials.Optical), 64},
                 new Object[]{OrePrefixes.circuit.get(Materials.Optical), 64},
 
@@ -1135,8 +1135,8 @@ public class GTCMMachineRecipePool implements IRecipePool {
                 eM_Teleportation.get(64),
 
                 HighEnergyFlowCircuit.get(64),
-                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UXV, 64),
-                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UXV, 64),
+                new Object[]{OrePrefixes.circuit.get(Materials.UXV), 64},
+                new Object[]{OrePrefixes.circuit.get(Materials.UXV), 64},
                 HighEnergyFlowCircuit.get(64),
 
                 SpaceWarper.get(64),
@@ -1181,7 +1181,7 @@ public class GTCMMachineRecipePool implements IRecipePool {
                 StellarConstructionFrameMaterial.get(4),
                 ItemList.Field_Generator_UMV.get(3),
                 ItemList.Emitter_UMV.get(6),
-                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UMV, 1),
+                new Object[]{OrePrefixes.circuit.get(Materials.UMV), 1},
 
                 SpaceWarper.get(24),
                 ParticleTrapTimeSpaceShield.get(32),
@@ -1216,9 +1216,9 @@ public class GTCMMachineRecipePool implements IRecipePool {
                 eM_Power.get(16),
                 GTOreDictUnificator.get(OrePrefixes.wireGt01, MaterialsUEVplus.SpaceTime, 16),
                 ItemList.Field_Generator_UMV.get(2),
-                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UXV, 4),
+                new Object[]{OrePrefixes.circuit.get(Materials.UXV), 4},
 
-                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UMV, 4),
+                new Object[]{OrePrefixes.circuit.get(Materials.UMV), 4},
                 ItemList.EnergisedTesseract.get(4),
                 ItemList.Tesseract.get(4),
                 GravitationalLens.get(8)
@@ -3110,7 +3110,7 @@ public class GTCMMachineRecipePool implements IRecipePool {
                     GTOreDictUnificator.get(OrePrefixes.frameGt, MaterialsUEVplus.SpaceTime, 64),
                     Industrial_MassFab.get(64),
                     ZPM3.get(64),
-                    GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UXV, 64),
+                    new Object[]{OrePrefixes.circuit.get(Materials.UXV), 64},
 
                     ItemList.Field_Generator_UMV.get(64),
                     ItemList.Field_Generator_UMV.get(64),

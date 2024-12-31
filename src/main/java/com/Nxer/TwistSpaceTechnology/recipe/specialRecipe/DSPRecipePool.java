@@ -116,7 +116,7 @@ public class DSPRecipePool implements IRecipePool {
                 ItemList.ZPM3.get(1),
                 GTOreDictUnificator.get(OrePrefixes.frameGt, Materials.CosmicNeutronium, 64),
                 CustomItemList.HighEnergyFlowCircuit.get(64),
-                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UMV, 64),
+                new Object[] { OrePrefixes.circuit.get(Materials.UMV), 64 },
 
                 ItemList.Sensor_UEV.get(64),
                 ItemList.Sensor_UEV.get(64),
@@ -150,7 +150,7 @@ public class DSPRecipePool implements IRecipePool {
                 new ItemStack(GCBlocks.landingPad, 64),
                 GTOreDictUnificator.get(OrePrefixes.frameGt, Materials.CosmicNeutronium, 64),
                 ItemList.Field_Generator_UEV.get(64),
-                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UMV, 64),
+                new Object[] { OrePrefixes.circuit.get(Materials.UMV), 64 },
 
                 ItemList.Electric_Motor_UEV.get(64),
                 ItemList.Electric_Piston_UEV.get(64),
@@ -235,8 +235,8 @@ public class DSPRecipePool implements IRecipePool {
 
                 AnnihilationConstrainer.get(64),
                 ItemList.Field_Generator_UMV.get(64),
-                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UXV, 64),
-                GTOreDictUnificator.get(OrePrefixes.circuit, Materials.UMV, 64),
+                new Object[] { OrePrefixes.circuit.get(Materials.UXV), 64 },
+                new Object[] { OrePrefixes.circuit.get(Materials.UMV), 64 },
 
                 CustomItemList.HighEnergyFlowCircuit.get(64),
                 ItemList.Tesseract.get(64),
